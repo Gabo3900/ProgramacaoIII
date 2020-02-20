@@ -89,7 +89,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
+                    </td>
                     <td class="auto-style1">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
