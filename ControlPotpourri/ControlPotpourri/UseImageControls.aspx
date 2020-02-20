@@ -10,7 +10,10 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            Imagem ligada diretamente ao endereço de internet
+            <hr />
             <asp:Image ID="Image1" runat="server" ImageUrl="https://abrilviagemeturismo.files.wordpress.com/2016/11/thinkstockphotos-4549879531.jpeg?quality=70&strip=info&w=680&h=453&crop=1" />
+            <hr />
         </div>
     </form>
 </body>
