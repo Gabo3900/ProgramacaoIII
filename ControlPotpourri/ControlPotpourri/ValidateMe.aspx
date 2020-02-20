@@ -10,13 +10,6 @@
         .auto-style1 {
             width: 317px;
         }
-        .auto-style2 {
-            height: 26px;
-        }
-        .auto-style3 {
-            width: 317px;
-            height: 26px;
-        }
     </style>
 </head>
 <body>
@@ -60,11 +53,11 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">Telefone</td>
-                    <td class="auto-style3">
+                    <td>Telefone</td>
+                    <td class="auto-style1">
                         <asp:TextBox ID="TextBoxPhone" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style2">
+                    <td>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBoxPhone" ErrorMessage="Favor informar seu telefone"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
