@@ -50,6 +50,7 @@
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBoxPostalCode" ErrorMessage="Favor informar seu CEP"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBoxPostalCode" ErrorMessage="CEP inválido" ValidationExpression="\d{5}(-\d{3})?"></asp:RegularExpressionValidator>
                     </td>
                 </tr>
                 <tr>
@@ -59,21 +60,23 @@
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBoxPhone" ErrorMessage="Favor informar seu telefone"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBoxPhone" ErrorMessage="Telefone inválido" ValidationExpression="((\(\d{2}\) ?)|(\d{2}-))?\d{4}-\d{4}"></asp:RegularExpressionValidator>
                     </td>
                 </tr>
                 <tr>
                     <td>Senha</td>
                     <td class="auto-style1">
-                        <asp:TextBox ID="TextBoxPassword" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="TextBoxPassword" runat="server" TextMode="Password"></asp:TextBox>
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBoxPassword" ErrorMessage="Favor informar sua senha"></asp:RequiredFieldValidator>
+                        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBoxPassword" ControlToValidate="TextBoxPasswordAgain" ErrorMessage="Senhas Diferentes"></asp:CompareValidator>
                     </td>
                 </tr>
                 <tr>
                     <td>Confirmar Senha</td>
                     <td class="auto-style1">
-                        <asp:TextBox ID="TextBoxPasswordAgain" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="TextBoxPasswordAgain" runat="server" TextMode="Password"></asp:TextBox>
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="TextBoxPasswordAgain" ErrorMessage="Favor informar sua senha"></asp:RequiredFieldValidator>
@@ -86,6 +89,7 @@
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="TextBoxAge" ErrorMessage="Favor informar sua idade"></asp:RequiredFieldValidator>
+                        <asp:CompareValidator ID="CompareValidator2" runat="server" ControlToValidate="TextBoxAge" ErrorMessage="Você deve ter até 30 anos para se cadastrar" Operator="LessThanEqual" Type="Integer" ValueToCompare="30"></asp:CompareValidator>
                     </td>
                 </tr>
                 <tr>

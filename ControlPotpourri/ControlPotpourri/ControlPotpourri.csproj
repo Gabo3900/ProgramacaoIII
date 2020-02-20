@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="UseImageControls.aspx" />
     <Content Include="ValidateMe.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -76,6 +77,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UseImageControls.aspx.cs">
+      <DependentUpon>UseImageControls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UseImageControls.aspx.designer.cs">
+      <DependentUpon>UseImageControls.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ValidateMe.aspx.cs">
       <DependentUpon>ValidateMe.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
