@@ -14,6 +14,12 @@
             <hr />
             <asp:Image ID="Image1" runat="server" ImageUrl="https://abrilviagemeturismo.files.wordpress.com/2016/11/thinkstockphotos-4549879531.jpeg?quality=70&strip=info&w=680&h=453&crop=1" />
             <hr />
+            Imagem ligada a um arquivo de imagem do projeto
+            <hr />
+            <asp:Image ID="Image2" runat="server" ImageUrl="~/imagens/popeye.gif" />
+            <hr />
+            Componente ImageButton<br />
+&nbsp;<asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/imagens/logo.png" PostBackUrl="~/ValidateMe.aspx" /><asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/imagens/cadastro.png" OnClick="ImageButton2_Click" />
         </div>
     </form>
 </body>

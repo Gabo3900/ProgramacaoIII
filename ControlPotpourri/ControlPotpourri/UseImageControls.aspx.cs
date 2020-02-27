@@ -13,5 +13,10 @@ namespace ControlPotpourri
         {
 
         }
+
+        protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("~\\ValidateMe.aspx");
+        }
     }
 }
