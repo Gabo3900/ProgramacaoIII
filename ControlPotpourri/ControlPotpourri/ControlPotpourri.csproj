@@ -72,6 +72,7 @@
     <Content Include="imagens\logo.png" />
     <Content Include="imagens\popeye.gif" />
     <Content Include="UseImageControls.aspx" />
+    <Content Include="UseMultiView.aspx" />
     <Content Include="UseTreeView.aspx" />
     <Content Include="ValidateMe.aspx" />
     <Content Include="Web.config" />
@@ -87,6 +88,13 @@
     </Compile>
     <Compile Include="UseImageControls.aspx.designer.cs">
       <DependentUpon>UseImageControls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UseMultiView.aspx.cs">
+      <DependentUpon>UseMultiView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UseMultiView.aspx.designer.cs">
+      <DependentUpon>UseMultiView.aspx</DependentUpon>
     </Compile>
     <Compile Include="UseTreeView.aspx.cs">
       <DependentUpon>UseTreeView.aspx</DependentUpon>

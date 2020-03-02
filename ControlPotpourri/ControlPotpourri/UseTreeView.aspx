@@ -31,9 +31,9 @@
                     <SelectedNodeStyle Font-Underline="True" HorizontalPadding="0px" VerticalPadding="0px" />
                 </asp:TreeView>
             </div>
-            <div style="height: 180px; width: 318px">
-                <asp:Label ID="LabelSelectedNode" runat="server" Text="Label"></asp:Label>
-                <asp:TextBox ID="TextBoxInfo" runat="server" TextMode="MultiLine" Height="148px" Width="284px"></asp:TextBox>
+            <div>
+                <asp:Label ID="LabelSelectedNode" runat="server" Text="Label"></asp:Label><br />
+                <asp:TextBox ID="TextBoxInfo" runat="server" TextMode="MultiLine" Height="171px" Width="385px"></asp:TextBox>
             </div>
         </div>
     </form>

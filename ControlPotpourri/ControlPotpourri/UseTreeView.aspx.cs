@@ -18,17 +18,17 @@ namespace ControlPotpourri
         protected void TreeView1_SelectedNodeChanged(object sender, EventArgs e)
         {
             
-            this.LabelSelectedNode.Text = String.Format("Nó: {0}", this.TreeView1.SelectedNode.Text);
-            TreeNodeCollection childNodes = this.TreeView1.SelectedNode.ChildNodes;
+            LabelSelectedNode.Text = String.Format("Nó selecinado: {0}", TreeView1.SelectedNode.Text);
+            TreeNodeCollection childNodes = TreeView1.SelectedNode.ChildNodes;
             if (childNodes != null)
             {
-                this.TextBoxInfo.Text = String.Empty;
+                TextBoxInfo.Text = String.Empty;
                 StringBuilder sb = new StringBuilder();
                 foreach (TreeNode childNode in childNodes)
                 {
                     sb.AppendFormat("{0}\n", childNode.Value);
                 }
-                this.TextBoxInfo.Text = sb.ToString();
+                TextBoxInfo.Text = sb.ToString();
             }
 
     }
