@@ -11,7 +11,7 @@
     <form id="form1" runat="server">
         <div>
             <div style="float: left">
-                <asp:TreeView ID="TreeView1" runat="server" ImageSet="Contacts" NodeIndent="10">
+                <asp:TreeView ID="TreeView1" runat="server" ImageSet="Contacts" NodeIndent="10" OnSelectedNodeChanged="TreeView1_SelectedNodeChanged">
                     <HoverNodeStyle Font-Underline="False" />
                     <Nodes>
                         <asp:TreeNode Text="Técnico em Informática para Internet" Value="Técnico em Informática para Internet">
