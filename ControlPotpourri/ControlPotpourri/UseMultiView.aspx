@@ -18,6 +18,7 @@
             <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0">
                 <asp:View ID="View1" runat="server">
                     Cadastro - Dados Pessoais
+                    <hr />
                     <table style="width: 100%;">
                         <tr>
                             <td>Nome</td>
@@ -44,6 +45,7 @@
                 </asp:View>
                 <asp:View ID="View2" runat="server">
                     Cadastro - Dados Academicos
+                    <hr />
                     <table style="width: 100%;">
                         <tr>
                             <td>Nome da Escola</td>
@@ -70,6 +72,7 @@
                 </asp:View>
                 <asp:View ID="View3" runat="server">
                     Cadastro - Filiação
+                    <hr />
                     <table style="width: 100%;">
                         <tr>
                             <td>Nome do Pai</td>
