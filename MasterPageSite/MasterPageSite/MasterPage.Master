@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="MasterPageSite.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 160px;
+            height: 90px;
+        }
+    </style>
+</head>
+<body style="background-color: #CCCCCC">
+    <form id="form1" runat="server">
+        <div>
+            <table style="width:100%;">
+                <tr>
+                    <td>
+                        <asp:Menu ID="Menu1" runat="server">
+                            <Items>
+                                <asp:MenuItem NavigateUrl="~/UseMaster.aspx" Text="Pagina Inicial" Value="Pagina Inicial"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/WebFormCapitulos.aspx" Text="Capítulos" Value="Capítulos"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/WebFormProjetos.aspx" Text="Projetos" Value="Projetos"></asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                    </td>
+                    <td>
+                        <img alt="" class="auto-style1" src="imagens/imagem.jpg" /></td>
+                </tr>
+            </table>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
