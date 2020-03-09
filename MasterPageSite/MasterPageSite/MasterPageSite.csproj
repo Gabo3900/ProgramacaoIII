@@ -67,9 +67,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Themes\Default\Default.css" />
     <Content Include="Global.asax" />
     <Content Include="imagens\imagem.jpg" />
     <Content Include="UseMaster.aspx" />
+    <Content Include="UseThemes.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebFormCapitulos.aspx" />
     <Content Include="WebFormProjetos.aspx" />
@@ -92,6 +94,13 @@
     </Compile>
     <Compile Include="UseMaster.aspx.designer.cs">
       <DependentUpon>UseMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UseThemes.aspx.cs">
+      <DependentUpon>UseThemes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UseThemes.aspx.designer.cs">
+      <DependentUpon>UseThemes.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebFormCapitulos.aspx.cs">
       <DependentUpon>WebFormCapitulos.aspx</DependentUpon>
