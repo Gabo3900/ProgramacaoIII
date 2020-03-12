@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UseThemes.aspx.cs" Inherits="MasterPageSite.UseThemes" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UseThemes.aspx.cs" Theme="SeeingRed" Inherits="MasterPageSite.UseThemes" %>
 
 <!DOCTYPE html>
 
@@ -10,6 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <h1>teste</h1>
         </div>
     </form>
 </body>

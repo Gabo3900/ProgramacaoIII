@@ -7,16 +7,16 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B3E58252-A6F9-433C-A9C7-C21A2BFF4361}</ProjectGuid>
+    <ProjectGuid>{95034C0D-2A1B-4952-965C-3A6DD6328C96}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MasterPageSite</RootNamespace>
-    <AssemblyName>MasterPageSite</AssemblyName>
+    <RootNamespace>ConfigORama</RootNamespace>
+    <AssemblyName>ConfigORama</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44359</IISExpressSSLPort>
+    <IISExpressSSLPort>44321</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -67,59 +67,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Themes\Default\Default.css" />
-    <Content Include="App_Themes\SeeingRed\Default.css" />
     <Content Include="Global.asax" />
-    <Content Include="imagens\imagem.jpg" />
-    <Content Include="UseMaster.aspx" />
-    <Content Include="UseThemes.aspx" />
     <Content Include="Web.config" />
-    <Content Include="WebFormCapitulos.aspx" />
-    <Content Include="WebFormProjetos.aspx" />
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="MasterPage.Master.cs">
-      <DependentUpon>MasterPage.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MasterPage.Master.designer.cs">
-      <DependentUpon>MasterPage.Master</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UseMaster.aspx.cs">
-      <DependentUpon>UseMaster.aspx</DependentUpon>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UseMaster.aspx.designer.cs">
-      <DependentUpon>UseMaster.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UseThemes.aspx.cs">
-      <DependentUpon>UseThemes.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UseThemes.aspx.designer.cs">
-      <DependentUpon>UseThemes.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebFormCapitulos.aspx.cs">
-      <DependentUpon>WebFormCapitulos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebFormCapitulos.aspx.designer.cs">
-      <DependentUpon>WebFormCapitulos.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebFormProjetos.aspx.cs">
-      <DependentUpon>WebFormProjetos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebFormProjetos.aspx.designer.cs">
-      <DependentUpon>WebFormProjetos.aspx</DependentUpon>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MasterPage.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -145,9 +110,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>53746</DevelopmentServerPort>
+          <DevelopmentServerPort>58863</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44359/</IISUrl>
+          <IISUrl>https://localhost:44321/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
